@@ -11,7 +11,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <FlowDocumentScrollViewer x:Name="documentViewer">
+        <FlowDocumentScrollViewer x:Name="docViewer">
             <FlowDocument>
                    <Paragraph FontSize="30" FontFamily="TimesNewRoman">
                             Ливерпуль (футбольный клуб)
@@ -746,8 +746,9 @@
             </FlowDocument>
         </FlowDocumentScrollViewer>
         <StackPanel Orientation="Horizontal" Grid.Row="1" >
-            <Button Content="Сохранить"/>
-            <Button Content="Загрузить"/>
+            <Button Content="Открыть" Click="Button_Click"/>
+            <Button Content="Сохранить" Click="Button_Click_1"/>
+            <Button Content="Очистить" Click="Button_Click_2"/>
         </StackPanel>
     </Grid>
 </Window>
